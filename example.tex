@@ -1,0 +1,98 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+% choose Xelatex compiler 选择Xelatex进行编译
+\documentclass{MyResume}
+
+\usepackage[English]{languageSelection}
+
+\begin{document}
+\pagenumbering{gobble}
+
+% 填写你的名字
+\CN{
+  \name{方鸿渐}
+}
+\EN{
+  \name{Jianhong Fang}
+}
+%**********************************相关信息****************************************
+% \otherInfo后面的四个大括号里的所有信息都会在一行输出，最多使用四个大括号，填写四个信息
+% 如果选择不填信息，那么大括号必须空着不写，而不能删除大括号。
+% 如果想要把信息写两行，那就用两次指令\otherInfo{}{}{}{}即可
+\CN{
+  \info{手机：(+86) 1234567890}{邮箱：test@test.test}{}{}
+  \info{性别：男}{籍贯：江南}{}{}
+  \info{来历：钱钟书《围城》}{}{}{}
+}
+\EN{
+  \info{mobile: (+86) 1234567890}{email: test@test.test}{}{}
+  \info{Gender: Male}{Hometown: South China}{}{}
+  \info{Origin: Fortress Besieged}{}{}{}
+}
+
+
+\CN{
+  \section{教育背景}
+}
+\EN{
+  \section{EDUCATION}
+}
+%***********列举*********************
+%***可添加多个\item，得到多个列举项，类似的也可以用\textbf{}、\textit{}做强调
+\CN{
+  \begin{itemize} [parsep=1ex]
+    \item \textbf{证书来源}：购买自爱尔兰商人
+  \end{itemize}
+}
+\CN{
+  \datedsubsection{\textbf{北平某大学}，实验班，\textit{本科}}{1922.09 - 1926.06}
+}
+\CN{
+  \begin{itemize} [parsep=1ex]
+    \item \textbf{土木工程系}：不喜欢，转系
+    \item \textbf{社会学系}：不喜欢，转系
+    \item \textbf{中国文学系}：从此毕业
+  \end{itemize}
+}
+\EN{
+  \begin{itemize} [parsep=1ex]
+    \item \textbf{Certificate source}: purchased from an Irish businessman
+  \end{itemize}
+}
+\EN{
+  \datedsubsection{\textbf{A university in Beiping}, experimental class, \textit{Undergraduate}}{1922.09 - 1926.06}
+  \begin{itemize} [parsep=1ex]
+    \item \textbf{Department of Civil Engineering}: I don't like it, change department
+    \item \textbf{Department of Sociology}: I don't like it, change department
+    \item \textbf{Department of Chinese Literature}: graduated
+  \end{itemize}
+}
+
+\CN{
+\section{简历写作注意事项}
+
+写作时不要泛泛而谈太笼统，要应用STAR原则，即Situation（情景）、Task（任务）、Action（行动）和Result（结果）四个英文单词的首字母组合。
+
+\begin{itemize}[parsep=0.5ex]
+  \item S指的是situation，事情是在什么情况下发生
+  \item T指的是task，你是如何明确你的目标的
+  \item A指的是action，针对这样的情况分析，你采用了什么行动方式
+  \item R指的是result，结果怎样，在这样的情况下你学习到了什么
+\end{itemize}
+}
+
+\EN{
+\section{Resume writing notes}
+
+
+\begin{itemize}[parsep=0.5ex]
+  \item S refers to the situation, under what circumstances did things happen
+  \item T refers to the task, how do you define your goal
+  \item A refers to the action, what kind of action did you take in this situation analysis
+  \item R refers to result, what is the result, what did you learn in this situation
+\end{itemize}
+}
+
+
+\end{document}
