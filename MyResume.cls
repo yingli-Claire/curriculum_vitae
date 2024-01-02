@@ -12,12 +12,7 @@
 \setlength\parindent{0em}  % 缩进
 \linespread{1.5}           % 行距
 \pagestyle{empty}          % 设置页面风格，不显示页眉和页脚
-\RequirePackage[fontsize=12pt]{fontsize} % 全局字号
-
-% 配置颜色
-% \RequirePackage{xcolor}
-% \definecolor{Main}{cmyk}{1, 0.6, 0, 0.5}
-% 正文中 \colorbox{Main}{\textcolor{white}{内容} 使用
+\RequirePackage[fontsize=11pt]{fontsize} % 全局字号
 
 % 上标
 % \RequirePackage[super]{nth} % 使用：\nth{1} 变成 1^{st}
@@ -76,16 +71,16 @@
 % 标题
 \RequirePackage{titlesec} % 自定义标题（section、subsection等）
 \titleformat{\section}         % 定义 section 格式
-  {\Large\scshape\raggedright} % 大号字体（\Large），小型大写字母（\scshape），左对齐（\raggedright）。
+  {\Large\scshape\bfseries\raggedright} % 大号字体（\Large），小型大写字母（\scshape），左对齐（\raggedright）。
   {}{0em}                      % Give a prefix to all sections, like 'Section ...'
   {}                           % Insert code before the heading
   [\titlerule]                 % 在标题之后插入水平线
-\titlespacing*{\section}{0cm}{*1}{*1} % 间距。\titlespacing{<命令>}{<左>}{<上>}{<下>}。*表示弹性
+\titlespacing*{\section}{0cm}{*3}{*1} % 间距。\titlespacing{<命令>}{<左>}{<上>}{<下>}。*表示弹性
 \titleformat{\subsection}
   {\large\raggedright}
   {}{0em}
   {}
-\titlespacing*{\subsection}{0cm}{*1}{*0.5}
+\titlespacing*{\subsection}{0cm}{*1}{*1}
 
 % ============
 % 二、自定义命令
@@ -108,7 +103,7 @@
   \vspace{4ex} % 文本之后添加垂直空白
 }
 
-% others
+% otherinfo
 \RequirePackage{xifthen} % use if then
 \newcommand{\info}[4]{
   \centerline{\large{\ {#1}}
@@ -124,4 +119,23 @@
   }
   \vspace{2ex}
 }
+
+
+% ============
+% 三、超链接
+% ============
+
+% 配置颜色
+% \RequirePackage{xcolor}
+% \definecolor{Main}{cmyk}{1, 0.6, 0, 0.5}
+%正文中 \colorbox{Main}{\textcolor{white}{内容} 使用
+
+% 设置超链接
+\RequirePackage[
+    colorlinks,
+    urlcolor    = blue,
+    linkcolor   = blue,
+    anchorcolor = blue,
+    citecolor   = blue,
+]{hyperref}
 

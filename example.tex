@@ -4,7 +4,8 @@
 % choose Xelatex compiler 选择Xelatex进行编译
 \documentclass{MyResume}
 
-\usepackage[English]{languageSelection}
+\usepackage[Chinese]{languageSelection}
+\usepackage{fontawesome}
 
 \begin{document}
 \pagenumbering{gobble}
@@ -69,29 +70,49 @@
   \end{itemize}
 }
 
-\CN{
-\section{简历写作注意事项}
-
-写作时不要泛泛而谈太笼统，要应用STAR原则，即Situation（情景）、Task（任务）、Action（行动）和Result（结果）四个英文单词的首字母组合。
-
-\begin{itemize}[parsep=0.5ex]
-  \item S指的是situation，事情是在什么情况下发生
-  \item T指的是task，你是如何明确你的目标的
-  \item A指的是action，针对这样的情况分析，你采用了什么行动方式
-  \item R指的是result，结果怎样，在这样的情况下你学习到了什么
-\end{itemize}
-}
+% ============
+% 文章发表
+% ============
+\nocite{schuld2015introduction}
 
 \EN{
-\section{Resume writing notes}
+  \renewcommand{\refname}{SELECTED PUBLICATIONS} % 英文
 
+  \bibliographystyle{unsrt}
+  \bibliography{refer}
+   
+  \
 
-\begin{itemize}[parsep=0.5ex]
-  \item S refers to the situation, under what circumstances did things happen
-  \item T refers to the task, how do you define your goal
-  \item A refers to the action, what kind of action did you take in this situation analysis
-  \item R refers to result, what is the result, what did you learn in this situation
-\end{itemize}
+  \Large{\href{https://scholar.google.com.tw/citations?user=DhtAFkwAAAAJ&hl=zh-CN&oi=ao}{Google Scholar Link}}
+
+  \
+}
+
+\CN{
+  \renewcommand{\refname}{部分研究成果} % 英文
+
+  \bibliographystyle{unsrt}
+  \bibliography{refer}
+
+  \
+
+  \Large{\href{https://scholar.google.com.tw/citations?user=DhtAFkwAAAAJ&hl=zh-CN&oi=ao }{谷歌学术链接}} 
+
+  \
+}
+
+% ============
+% 兴趣爱好
+% ============
+
+\CN{
+  \section{兴趣爱好}
+
+  \begin{itemize} [parsep=1ex]
+    \item {\Huge \faLinux} \ \ Linux ！Markdown ！
+    \item 羽毛球！网球（曾是XX大学羽毛球队、网球队队员）
+  \end{itemize}
+
 }
 
 
